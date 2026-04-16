@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>かいものメモ｜使い方</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #080b14;
+    color: #e2e8f0;
+    font-family: 'Hiragino Sans', 'Noto Sans JP', 'Yu Gothic', sans-serif;
+    padding-bottom: 60px;
+  }
+  .header {
+    background: linear-gradient(160deg, #0f172a, #0f1f3d);
+    border-bottom: 1px solid #1e293b;
+    padding: 24px 20px 18px;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 22px; font-weight: 800;
+    background: linear-gradient(90deg, #818cf8, #38bdf8);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    margin-bottom: 4px;
+  }
+  .header p { font-size: 12px; color: #475569; }
+
+  .main { max-width: 500px; margin: 0 auto; padding: 20px 16px 0; }
+
+  .section {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    padding: 18px 16px;
+    margin-bottom: 14px;
+  }
+  .section-title {
+    font-size: 13px; font-weight: 700;
+    color: #818cf8; margin-bottom: 14px;
+    display: flex; align-items: center; gap: 8px;
+    letter-spacing: 0.5px;
+  }
+  .step {
+    display: flex; gap: 14px; align-items: flex-start;
+    margin-bottom: 14px;
+  }
+  .step:last-child { margin-bottom: 0; }
+  .step-num {
+    width: 28px; height: 28px; border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1, #818cf8);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700; flex-shrink: 0; color: #fff;
+  }
+  .step-body { flex: 1; }
+  .step-title { font-size: 14px; font-weight: 700; color: #e2e8f0; margin-bottom: 3px; }
+  .step-desc { font-size: 12px; color: #64748b; line-height: 1.6; }
+  .step-desc b { color: #94a3b8; }
+
+  .tip {
+    background: #1e293b;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    display: flex; gap: 10px; align-items: flex-start;
+  }
+  .tip:last-child { margin-bottom: 0; }
+  .tip-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+  .tip-text { font-size: 12px; color: #94a3b8; line-height: 1.6; }
+  .tip-text b { color: #e2e8f0; }
+
+  .badge {
+    display: inline-block;
+    background: #1e293b; border: 1px solid #334155;
+    border-radius: 6px; padding: 2px 7px;
+    font-size: 11px; color: #818cf8; margin: 2px 2px 0 0;
+  }
+
+  .footer {
+    text-align: center; padding: 20px;
+    font-size: 11px; color: #1e293b;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🛒 かいものメモ｜使い方</h1>
+  <p>シンプルだけど、ちょっと賢い買い物メモアプリ</p>
+</div>
+
+<div class="main">
+
+  <!-- 基本の使い方 -->
+  <div class="section">
+    <div class="section-title">📖 基本の使い方</div>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <div class="step-title">商品を入力する</div>
+        <div class="step-desc">
+          上の入力欄に買いたいものを入力して <b>＋ボタン</b> か <b>Enterキー</b> で追加。<br>
+          <b>カンマ区切り</b>で複数まとめて入れてもOK。<br>
+          例：きゅうり、豚バラ、牛乳、パン
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <div class="step-title">コーナー別に並べ替える</div>
+        <div class="step-desc">
+          <b>「✨ コーナー別に並べ替え」</b>ボタンを押すと、スーパーのコーナー順に自動で整理される。<br>
+          野菜売り場・肉売り場・乳製品・飲み物…など同じコーナーのものがまとまる。
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <div class="step-title">買ったらチェックを入れる</div>
+        <div class="step-desc">
+          商品をタップするとチェックがついて薄くなる。<br>
+          もう一度タップするとチェックが外れる。
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <div class="step-title">買い終わったら削除する</div>
+        <div class="step-desc">
+          チェック済みをまとめて消すには <b>「チェック済み削除」</b> ボタン。<br>
+          全部リセットするには <b>「全削除」</b> ボタン（右上）。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 数量の変え方 -->
+  <div class="section">
+    <div class="section-title">🔢 数量を変える</div>
+    <div class="tip">
+      <div class="tip-icon">－＋</div>
+      <div class="tip-text">
+        各商品の右側に <b>「－ 1 ＋」</b> のボタンがあります。<br>
+        ＋を押すと数が増え、－を押すと減ります（1以下にはなりません）。<br>
+        2以上になると数字が<b style="color:#818cf8">紫色</b>になって一目でわかります。
+      </div>
+    </div>
+  </div>
+
+  <!-- 前回購入日 -->
+  <div class="section">
+    <div class="section-title">📅 前回購入日</div>
+    <div class="tip">
+      <div class="tip-icon">📅</div>
+      <div class="tip-text">
+        同じ商品を前に買ったことがあると、商品名の下に <b>「○日前に購入」</b> と表示されます。<br>
+        <b style="color:#f87171">1週間以内</b>に買ったものは赤字で表示。「あ、まだあるかも」と気づけます。
+      </div>
+    </div>
+    <div class="tip">
+      <div class="tip-icon">💾</div>
+      <div class="tip-text">
+        商品にチェックを入れると <b>「今日買った」</b> として自動保存されます。<br>
+        ブラウザを閉じても履歴は残るので、次回から前回購入日が表示されます。
+      </div>
+    </div>
+  </div>
+
+  <!-- カテゴリ一覧 -->
+  <div class="section">
+    <div class="section-title">🗂 自動で振り分けられるコーナー</div>
+    <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:4px;">
+      <span class="badge">🥬 野菜・果物</span>
+      <span class="badge">🥩 肉類</span>
+      <span class="badge">🐟 魚・海産物</span>
+      <span class="badge">🥛 乳製品・卵</span>
+      <span class="badge">🍞 パン・米・麺</span>
+      <span class="badge">🧊 冷凍食品</span>
+      <span class="badge">🧃 飲み物</span>
+      <span class="badge">🍫 お菓子・デザート</span>
+      <span class="badge">🫙 調味料・乾物</span>
+      <span class="badge">🛒 日用品・その他</span>
+    </div>
+    <div class="tip" style="margin-top:12px">
+      <div class="tip-icon">💡</div>
+      <div class="tip-text">
+        認識できない商品は自動的に <b>「日用品・その他」</b> に入ります。
+      </div>
+    </div>
+  </div>
+
+  <!-- セール機能 -->
+  <div class="section">
+    <div class="section-title">🏷️ セール品をマークする</div>
+    <div class="tip">
+      <div class="tip-icon">🏷️</div>
+      <div class="tip-text">
+        各商品の右側にある <b>🏷️ボタン</b> をタップするとセールマークがつきます。<br>
+        商品名の横に <b style="color:#ef4444">「🏷️ SALE」</b> バッジが表示されます。
+      </div>
+    </div>
+    <div class="tip">
+      <div class="tip-icon">📰</div>
+      <div class="tip-text">
+        スーパーのチラシを見ながら「今日これ安い！」とマークしておけば、買い物中に一目でセール品がわかります。<br>
+        計画的な買い物で食費の節約につながります。
+      </div>
+    </div>
+  </div>
+
+  <!-- よく買うもの -->
+  <div class="section">
+    <div class="section-title">⭐ よく買うもの（お気に入り）</div>
+    <div class="tip">
+      <div class="tip-icon">⭐</div>
+      <div class="tip-text">
+        商品にチェックを入れると自動的に<b>「よく買うもの」</b>に登録されます。<br>
+        次回から入力欄の上にボタンで表示され、タップするだけでリストに追加できます。
+      </div>
+    </div>
+    <div class="tip">
+      <div class="tip-icon">🔢</div>
+      <div class="tip-text">
+        よく買う順に並ぶので、使えば使うほど自分専用のリストになっていきます。
+      </div>
+    </div>
+  </div>
+
+  <!-- カテゴリ手動設定 -->
+  <div class="section">
+    <div class="section-title">🗂 カテゴリを自分で設定</div>
+    <div class="tip">
+      <div class="tip-icon">🗂</div>
+      <div class="tip-text">
+        並べ替えをした後、認識できなかった商品には <b>「🗂 分類」</b> ボタンが表示されます。<br>
+        タップするとカテゴリ選択画面が開き、自分で設定できます。
+      </div>
+    </div>
+    <div class="tip">
+      <div class="tip-icon">💡</div>
+      <div class="tip-text">
+        例えば「カール」→「お菓子・デザート」のように設定すると、次回から自動で正しいコーナーに並びます。設定はお気に入りとして記憶されます。
+      </div>
+    </div>
+  </div>
+
+  <!-- ヒント -->
+  <div class="section">
+    <div class="section-title">💡 便利な使い方</div>
+    <div class="tip">
+      <div class="tip-icon">📱</div>
+      <div class="tip-text">
+        <b>スマホのホーム画面に追加</b>するとアプリみたいに使えます。<br>
+        iPhoneは Safari で開いて「共有 → ホーム画面に追加」。
+      </div>
+    </div>
+    <div class="tip">
+      <div class="tip-icon">🔄</div>
+      <div class="tip-text">
+        買い物が終わったら <b>「全削除」</b> でリセット。<br>
+        前回購入日の履歴はそのまま残るので、次回からもちゃんと表示されます。
+      </div>
+    </div>
+    <div class="tip">
+      <div class="tip-icon">📨</div>
+      <div class="tip-text">
+        <b>HTMLファイルを送るだけ</b>で誰でも使えます。インストール不要。<br>
+        LINEやメールに添付して送ってください。
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">かいものメモ © 2025</div>
+
+</body>
+</html>
